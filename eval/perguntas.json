@@ -1,0 +1,228 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Quais são os dois tipos de prompt injection descritos pelo OWASP?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "direta",
+        "direct"
+      ],
+      [
+        "indireta",
+        "indirect"
+      ]
+    ]
+  },
+  {
+    "id": 2,
+    "pergunta": "Qual item do OWASP Top 10 para LLMs 2025 trata do vazamento do prompt do sistema?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "LLM07",
+        "System Prompt Leakage"
+      ]
+    ]
+  },
+  {
+    "id": 3,
+    "pergunta": "O que é Excessive Agency (agência excessiva) em aplicações com LLM?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "permiss",
+        "permission",
+        "autonomia",
+        "autonomy",
+        "funcionalidade",
+        "functionality"
+      ]
+    ]
+  },
+  {
+    "id": 4,
+    "pergunta": "O que é Data and Model Poisoning?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "treinamento",
+        "training",
+        "fine-tuning",
+        "ajuste",
+        "embedding"
+      ]
+    ]
+  },
+  {
+    "id": 5,
+    "pergunta": "Qual é o risco de Unbounded Consumption (consumo ilimitado)?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "negação de serviço",
+        "denial of service",
+        "dos",
+        "custo",
+        "cost"
+      ]
+    ]
+  },
+  {
+    "id": 6,
+    "pergunta": "O que o OWASP diz sobre as fraquezas de vetores e embeddings (Vector and Embedding Weaknesses)?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "rag",
+        "retrieval",
+        "recuperação"
+      ],
+      [
+        "vetor",
+        "vector",
+        "embedding"
+      ]
+    ]
+  },
+  {
+    "id": 7,
+    "pergunta": "O que é Improper Output Handling?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "valida",
+        "validation",
+        "sanitiza",
+        "sanitiz"
+      ]
+    ]
+  },
+  {
+    "id": 8,
+    "pergunta": "Quais estratégias de mitigação o OWASP recomenda para prompt injection?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "privilég",
+        "privilege"
+      ],
+      [
+        "filtr",
+        "filter"
+      ]
+    ]
+  },
+  {
+    "id": 9,
+    "pergunta": "O que é Misinformation segundo o OWASP?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "aluc",
+        "halluc",
+        "fals",
+        "incorret",
+        "incorrect",
+        "factual"
+      ]
+    ]
+  },
+  {
+    "id": 10,
+    "pergunta": "Que tipo de componentes de terceiros podem comprometer a cadeia de suprimentos de um LLM?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "modelos pré-treinados",
+        "pre-trained",
+        "dataset",
+        "conjuntos de dados",
+        "bibliotec",
+        "librar"
+      ]
+    ]
+  },
+  {
+    "id": 11,
+    "pergunta": "O que caracteriza o Jailbreaking em modelos de linguagem e como ele difere do Prompt Injection clássico?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "segurança",
+        "safety",
+        "alinhamento",
+        "alignment"
+      ],
+      [
+        "restriç",
+        "restriction",
+        "burlar",
+        "bypass"
+      ]
+    ]
+  },
+  {
+    "id": 12,
+    "pergunta": "O que é Insecure Output Handling e quais vulnerabilidades de segurança web (como XSS ou RCE) ele pode introduzir no backend?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "xss",
+        "rce",
+        "execução",
+        "execution",
+        "backend",
+        "navegador",
+        "browser"
+      ]
+    ]
+  },
+  {
+    "id": 13,
+    "pergunta": "Qual é o impacto técnico e de negócio de vazamentos de System Prompts em aplicações corporativas de LLM?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "propriedade intelectual",
+        "intellectual property",
+        "lógica",
+        "logic",
+        "instruç",
+        "instruction"
+      ]
+    ]
+  },
+  {
+    "id": 14,
+    "pergunta": "Como funcionam ataques de Model Inversion e extração de parâmetros ou pesos de modelos proprietários?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "extra",
+        "extract",
+        "pesos",
+        "weights",
+        "reconstr",
+        "reconstruct",
+        "treinamento",
+        "training"
+      ]
+    ]
+  },
+  {
+    "id": 15,
+    "pergunta": "O que são ataques de inferência de pertencimento (Membership Inference Attacks) em conjuntos de dados de treinamento de IA?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "pertenc",
+        "member",
+        "dataset",
+        "conjunto",
+        "presenç",
+        "presence"
+      ]
+    ]
+  }
+]
