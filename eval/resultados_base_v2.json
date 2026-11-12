@@ -1,0 +1,543 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Quais são os dois tipos de prompt injection descritos pelo OWASP?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "direta",
+        "direct"
+      ],
+      [
+        "indireta",
+        "indirect"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "Direct Prompt Injections e Indirect Prompt Injections.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 8
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 63
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 121
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 7
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "pergunta": "Qual item do OWASP Top 10 para LLMs 2025 trata do vazamento do prompt do sistema?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "LLM07",
+        "System Prompt Leakage"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": false,
+    "resposta": "Não sei com base nos documentos.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 1
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 5
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 6
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 41
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "pergunta": "O que é Excessive Agency (agência excessiva) em aplicações com LLM?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "permiss",
+        "permission",
+        "autonomia",
+        "autonomy",
+        "funcionalidade",
+        "functionality"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "Excessive Agency (agência excessiva) é uma vulnerabilidade em aplicações com LLM (Large Language Models) que ocorre quando um modelo de linguagem é concedido uma agência excessiva, permitindo que ele tome ações sem supervisão adequada. Isso pode ocorrer quando um modelo é capaz de se comunicar com outros sistemas ou realizar ações em resposta a um prompt, sem que haja controle suficiente sobre suas ações.\n\nDe acordo com a OWASP, a agência excessiva é caracterizada pela capacidade do modelo de realizar ações sem supervisão adequada, o que pode levar a uma série de impactos negativos, incluindo violações de privacidade, integridade e disponibilidade.\n\nA agência excessiva pode ser causada por uma combinação de fatores, incluindo excesso de funcionalidade, excesso de permissões e excesso de autonomia. Além disso, a agência excessiva pode ser desencadeada por eventos como a hallucinação, a confabulação, a injeção de prompts maliciosos ou a falha de um modelo.\n\nÉ importante notar que a agência excessiva é diferente da insegura handling de saída, que se refere à falta de escrutinio suficiente sobre as saídas do modelo.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 26
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 26
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 26
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "pergunta": "O que é Data and Model Poisoning?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "treinamento",
+        "training",
+        "fine-tuning",
+        "ajuste",
+        "embedding"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "Data and Model Poisoning é um tipo de ataque de modelagem de dados que envolve a manipulação de dados de treinamento, ajuste ou embutimento para introduzir vulnerabilidades, backdoors ou sesgos. Essa manipulação pode comprometer a segurança, desempenho ou comportamento ético do modelo, levando a saídas prejudiciais ou capacidades prejudicadas.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 20
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 39
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 39
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 32
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "pergunta": "Qual é o risco de Unbounded Consumption (consumo ilimitado)?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "negação de serviço",
+        "denial of service",
+        "dos",
+        "custo",
+        "cost"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "O risco de Unbounded Consumption é que o modelo de linguagem pode gerar saídas baseadas em input de forma excessiva e descontrolada, levando a riscos como:\n\n- Denial of Service (DoS)\n- Perdas econômicas\n- Roubo de modelo\n- Degradação do serviço\n\nAlém disso, a vulnerabilidade pode ser explorada por ataques que:\n\n- Ovelha o modelo com inputs de comprimento variável, explorando processamentos inefficazes\n- Depleta recursos e pode render o sistema inoperativo, impactando a disponibilidade do serviço.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 39
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 39
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 101
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "pergunta": "O que o OWASP diz sobre as fraquezas de vetores e embeddings (Vector and Embedding Weaknesses)?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "rag",
+        "retrieval",
+        "recuperação"
+      ],
+      [
+        "vetor",
+        "vector",
+        "embedding"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "O OWASP alerta sobre as fraquezas de vetores e embeddings como uma vulnerabilidade significativa em sistemas que utilizam a Retenção Augmentada Geração (RAG) com Modelos de Linguagem Grandes (LLMs). Essas fraquezas podem ser exploradas por ações maliciosas (intencionais ou não) para injetar conteúdo prejudicial, manipular saídas do modelo ou acessar informações sensíveis.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 33
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 4
+      },
+      {
+        "document": "ignore-previous-prompt.pdf",
+        "page": 10
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 17
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "pergunta": "O que é Improper Output Handling?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "valida",
+        "validation",
+        "sanitiza",
+        "sanitiz"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "Improper Output Handling é uma vulnerabilidade de segurança relacionada à insuficiente validação, sanitização e manejo dos outputs gerados por modelos de linguagem grande (LLM) antes que eles sejam passados para outros componentes e sistemas.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 23
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 96
+      },
+      {
+        "document": "injection-prompt-llm.pdf",
+        "page": 20
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 64
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "pergunta": "Quais estratégias de mitigação o OWASP recomenda para prompt injection?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "privilég",
+        "privilege"
+      ],
+      [
+        "filtr",
+        "filter"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": false,
+    "resposta": "Não sei com base nos documentos.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 8
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 7
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 7
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 63
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "pergunta": "O que é Misinformation segundo o OWASP?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "aluc",
+        "halluc",
+        "fals",
+        "incorret",
+        "incorrect",
+        "factual"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "Misinformation, segundo o OWASP, é a produção de informações falsas ou enganosas por modelos de linguagem de grande capacidade (LLMs) que parecem credíveis, mas não são verdadeiras.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 36
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 36
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 23
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 21
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "pergunta": "Que tipo de componentes de terceiros podem comprometer a cadeia de suprimentos de um LLM?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "modelos pré-treinados",
+        "pre-trained",
+        "dataset",
+        "conjuntos de dados",
+        "bibliotec",
+        "librar"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "Segundo o documento [llm-top-10-OWASP.pdf, p.11], os componentes de terceiros que podem comprometer a cadeia de suprimentos de um LLM incluem:\n\n* Pre-trained models\n* Dados\n* Plataformas de deploy\n\nEsses componentes de terceiros podem ser manipulados por ataques de tampering ou poisoning, o que pode afetar a integridade dos modelos de aprendizado de máquina e causar problemas de segurança ou falhas no sistema.",
+    "fontes": [
+      {
+        "document": "nist_aml.pdf",
+        "page": 7
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 15
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 3
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 54
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "pergunta": "O que caracteriza o Jailbreaking em modelos de linguagem e como ele difere do Prompt Injection clássico?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "segurança",
+        "safety",
+        "alinhamento",
+        "alignment"
+      ],
+      [
+        "restriç",
+        "restriction",
+        "burlar",
+        "bypass"
+      ]
+    ],
+    "fonte_ok": false,
+    "resp_ok": false,
+    "resposta": "Não sei com base nos documentos.",
+    "fontes": [
+      {
+        "document": "gcg-attack.pdf",
+        "page": 19
+      },
+      {
+        "document": "gcg-attack.pdf",
+        "page": 3
+      },
+      {
+        "document": "gcg-attack.pdf",
+        "page": 6
+      },
+      {
+        "document": "injection-prompt-llm.pdf",
+        "page": 2
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "pergunta": "O que é Insecure Output Handling e quais vulnerabilidades de segurança web (como XSS ou RCE) ele pode introduzir no backend?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "xss",
+        "rce",
+        "execução",
+        "execution",
+        "backend",
+        "navegador",
+        "browser"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "Insecure Output Handling refere-se à falta de controle e validação adequada sobre as saídas dos modelos de linguagem geradores (LLM) em aplicativos. Isso pode permitir que os ataques explodem em vulnerabilidades de segurança web, como:\n\n* Cross-Site Scripting (XSS)\n* Cross-Site Request Forgery (CSRF)\n* Server-Side Request Forgery (SSRF)\n* Escalada de privilégios\n* Execução remota de código\n\nDe acordo com o documento [llm-top-10-OWASP.pdf, p.23], a Insecure Output Handling pode aumentar a impactante de um ataque se:\n\n* A aplicação conceder privilégios ao LLM além do que é necessário para os usuários finais, permitindo escalada de privilégios ou execução remota de código.\n* A aplicação for vulnerável a ataques de injeção de prompts indiretos, que podem permitir que um atacante ganhe acesso privilegiado a um ambiente de usuário-alvo.\n\nÉ importante implementar medidas de segurança, como a validação e o controle de saídas, para evitar essas vulnerabilidades.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 23
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 25
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 37
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 51
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "pergunta": "Qual é o impacto técnico e de negócio de vazamentos de System Prompts em aplicações corporativas de LLM?",
+    "fonte": "llm-top-10-OWASP.pdf",
+    "contem": [
+      [
+        "propriedade intelectual",
+        "intellectual property",
+        "lógica",
+        "logic",
+        "instruç",
+        "instruction"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": false,
+    "resposta": "Não sei com base nos documentos.",
+    "fontes": [
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 11
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 5
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 15
+      },
+      {
+        "document": "llm-top-10-OWASP.pdf",
+        "page": 26
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "pergunta": "Como funcionam ataques de Model Inversion e extração de parâmetros ou pesos de modelos proprietários?",
+    "fonte": "nist_aml.pdf",
+    "contem": [
+      [
+        "extra",
+        "extract",
+        "pesos",
+        "weights",
+        "reconstr",
+        "reconstruct",
+        "treinamento",
+        "training"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": false,
+    "resposta": "Não sei com base nos documentos.",
+    "fontes": [
+      {
+        "document": "nist_aml.pdf",
+        "page": 54
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 56
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 21
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 44
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "pergunta": "O que são ataques de inferência de pertencimento (Membership Inference Attacks) em conjuntos de dados de treinamento de IA?",
+    "fonte": "nist_aml.pdf",
+    "contem": [
+      [
+        "pertenc",
+        "member",
+        "dataset",
+        "conjunto",
+        "presenç",
+        "presence"
+      ]
+    ],
+    "fonte_ok": true,
+    "resp_ok": true,
+    "resposta": "Ataques de inferência de pertencimento (Membership Inference Attacks) são ataques em que o atacante tenta determinar se um dado de entrada é ou não parte do conjunto de dados de treinamento de um modelo de aprendizado de máquina (ML). Esse tipo de ataque visa inferir informações sobre o conjunto de dados de treinamento, como atributos sensíveis ou propriedades da distribuição da dados.\n\nDe acordo com o documento NIST AI 100-2e2025, os ataques de inferência de pertencimento podem ser realizados de várias maneiras, incluindo a perda-base (loss-based attack) e a propriedade de inferência (property inference). A perda-base é uma técnica eficiente e amplamente utilizada que aproveita a conhecimento de que o modelo minimiza a perda nos dados de treinamento.\n\nOs ataques de inferência de pertencimento são considerados uma ameaça para a privacidade dos dados de treinamento e podem ser realizados em ambientes de treinamento de ML, tanto em white-box quanto em black-box.",
+    "fontes": [
+      {
+        "document": "nist_aml.pdf",
+        "page": 18
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 20
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 43
+      },
+      {
+        "document": "nist_aml.pdf",
+        "page": 44
+      }
+    ]
+  }
+]
