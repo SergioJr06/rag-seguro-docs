@@ -3,16 +3,7 @@
     "id": 1,
     "pergunta": "Quais são os dois tipos de prompt injection descritos pelo OWASP?",
     "fonte": "llm-top-10-OWASP.pdf",
-    "contem": [
-      [
-        "direta",
-        "direct"
-      ],
-      [
-        "indireta",
-        "indirect"
-      ]
-    ]
+    "contem": [["direta", "direto", "direct"], ["indireta", "indireto", "indirect"]]
   },
   {
     "id": 2,
